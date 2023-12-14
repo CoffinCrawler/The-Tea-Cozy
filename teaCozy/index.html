@@ -12,39 +12,40 @@
     <body>
 
         <!--HEADER AND NAV SECTION-->
-        <header class="header">
+        <div class="navContainer">
+            <header class="header">
 
-            <!--Logo-->
-            <figure>
-                <img class="logo" src="/resources/imgs/teaCozy_logo.png" alt="">
-            </figure>
+                <!--Logo-->
+                <figure>
+                    <img class="logo" src="/resources/imgs/teaCozy_logo.png" alt="">
+                </figure>
 
-            <!--Nav-->
-            <nav class="nav" id="navId">
-                <a href="mission">Mission</a>
-                <a href="monthly_tea">Featured Tea</a>
-                <a href="locations">Locations</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i><span class="material-symbols-outlined">menu</span></i></a>
-            </nav>
-            
-            <!--Script for responsive menu when in mobile view-->
-            <script type="text/javascript">
-                function myFunction() {
-                var x = document.getElementById("navId");
-                    if (x.className === "nav") {
-                        x.className += " responsive";
-                    } else {
-                        x.className = "nav";
-                    }
-                    }
-            </script>
-
-        </header>
+                <!--Nav-->
+                <nav class="nav" id="navId">
+                    <a href="#mission">Mission</a>
+                    <a href="#monthly_tea">Featured Tea</a>
+                    <a href="#locations">Locations</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i><span class="material-symbols-outlined">menu</span></i></a>
+                </nav>
+                
+                <!--Script for responsive menu when in mobile view-->
+                <script type="text/javascript">
+                    function myFunction() {
+                    var x = document.getElementById("navId");
+                        if (x.className === "nav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "nav";
+                        }
+                        }
+                </script>
+            </header>
+        </div>
         
         <!--SECTION FOR MAIN BODY ELEMENTS-->
         <main>
             <!-- Mission Section-->
-            <div class="missionContainer">
+            <div class="missionContainer" id="mission">
                 <div class="mission">
                     <h2>Our Mission</h2>
                     <h4>Handpicked, Artisanally Curated, Free range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
@@ -52,7 +53,7 @@
             </div>
 
             <!-- Monthly Section-->
-            <div class="monthlyTeaContainer">
+            <div class="monthlyTeaContainer" id="monthly_tea">
                 <h2>Tea of the Month</h2>
                 <h4>What's Steeping at The Tea Cozy?</h4>
                 <div class="monthlyTea">
@@ -95,7 +96,7 @@
             </div>
 
             <!-- Locations Section-->
-            <div class="locationsContainer">
+            <div class="locationsContainer" id="locations">
                 <h2>Locations</h2>
                 <div class="locationsPanelContainer">
                     <!-- Locations Panels-->

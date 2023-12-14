@@ -9,6 +9,10 @@
 
 /* HEADER STYLING */
 
+.navContainer {
+    height: 69px;
+}
+
 /* Adjusting Logo Size*/
 .logo {
     margin-left: 10px;
@@ -16,14 +20,15 @@
 }
 
 header {
-    opacity: 0.6;
-    min-height: 69px;
+    opacity: 0.9;
+    min-height: 68px;
     width: 100vw ;
-  /*position:fixed; */
+    position: fixed;
     border-bottom: 1px solid seashell;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 9;
 }
 
 
@@ -42,11 +47,12 @@ nav a {
 }
 
 nav a:hover {
-    color: aqua;
+    color: #9d866c;
+    font-size: 23px;
 }
 
 nav a:active {
-    color: blue;
+    color: #aa4418;
 }
 
 nav .icon {
@@ -80,6 +86,7 @@ nav .icon {
 /* Mission Section Styling */
 
 .missionContainer {
+    top: 69px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,6 +259,13 @@ nav .icon {
     height: 50px;
     margin-left: 15px;
 }
+
+/* Body Transparency */
+
+body {
+    opacity: 0.8;
+}
+
 
 
 
