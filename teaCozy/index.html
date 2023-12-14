@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tea Cozy</title>
+        <link rel="stylesheet" href="/resources/css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="text/javascript" href="/resources/js/index.js">
+    </head>
+
+    <body>
+
+        <!--HEADER AND NAV SECTION-->
+        <header class="header">
+
+            <!--Logo-->
+            <figure>
+                <img class="logo" src="/resources/imgs/teaCozy_logo.png" alt="">
+            </figure>
+
+            <!--Nav-->
+            <nav class="nav" id="navId">
+                <a href="mission">Mission</a>
+                <a href="monthly_tea">Featured Tea</a>
+                <a href="locations">Locations</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i><span class="material-symbols-outlined">menu</span></i></a>
+            </nav>
+            
+            <!--Script for responsive menu when in mobile view-->
+            <script type="text/javascript">
+                function myFunction() {
+                var x = document.getElementById("navId");
+                    if (x.className === "nav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "nav";
+                    }
+                    }
+            </script>
+
+        </header>
+        
+        <!--SECTION FOR MAIN BODY ELEMENTS-->
+        <main>
+            <!-- Mission Section-->
+            <div class="missionContainer">
+                <div class="mission">
+                    <h2>Our Mission</h2>
+                    <h4>Handpicked, Artisanally Curated, Free range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+                </div>
+            </div>
+
+            <!-- Monthly Section-->
+            <div class="monthlyTeaContainer">
+                <h2>Tea of the Month</h2>
+                <h4>What's Steeping at The Tea Cozy?</h4>
+                <div class="monthlyTea">
+                    <!-- Monthly Panel -->
+                    <div class="monthlyPanel" id="berryBlitz">
+                        <figure>
+                            <img src="/resources/imgs/img-berryblitz.jpeg" alt="">
+                        </figure>
+                        <h4>Fall Berry Blitz</h4>
+                    </div>
+                    <!-- Monthly Panel -->
+                    <div class="monthlyPanel" id="spicedRum">
+                        <figure>
+                            <img src="/resources/imgs/img-spiced-rum.jpeg" alt="">
+                        </figure>
+                        <h4>Spiced Rum Tea</h4>
+                    </div>
+                    <!-- Monthly Panel -->
+                    <div class="monthlyPanel" id="seasonal">
+                        <figure>
+                            <img src="/resources/imgs/img-donut.jpeg" alt="">
+                        </figure>
+                        <h4>Seasonal Donuts</h4>
+                    </div>
+                    <!-- Monthly Panel -->
+                    <div class="monthlyPanel" id="myrtleAve">
+                        <figure>
+                            <img src="/resources/imgs/img-myrtle-ave.jpeg" alt="">
+                        </figure>
+                        <h4>Myrtle Ave Tea</h4>
+                    </div>
+                    <!-- Monthly Panel -->
+                    <div class="monthlyPanel" id="bedfordBizzare">
+                        <figure>
+                            <img src="/resources/imgs/img-bedford-bizarre.jpeg" alt="">
+                        </figure>
+                        <h4>Bedford Bizzare Tea</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Locations Section-->
+            <div class="locationsContainer">
+                <h2>Locations</h2>
+                <div class="locationsPanelContainer">
+                    <!-- Locations Panels-->
+                    <div class="locationPanel" id="downtown">
+                        <h3>Downtown</h3>
+                        <h4>384 West 4th St</h4>
+                        <h4>Suite 108</h4>
+                        <h4>Portland, Maine</h4>
+                    </div>
+                    <!-- Locations Panels-->
+                    <div class="locationPanel" id="eastBayside">
+                        <h3>East Bayside</h3>
+                        <h4>3433 Phisherman's Avenue</h4>
+                        <h4>(Northwest Corner)</h4>
+                        <h4>Portland, Maine</h4>
+                    </div>
+                    <!-- Locations Panels-->
+                    <div class="locationPanel" id="oakdale">
+                        <h3>Oakdale</h3>
+                        <h4>515 Crescent Avenue</h4>
+                        <h4>Second Floor</h4>
+                        <h4>Portland, Maine</h4>
+                    </div>
+                </div>
+
+                <div class="locationsPanelContainerSmall">
+                    <!-- Locations Panels-->
+                    <div class="locationPanelSmall" id="downtown">
+                        <h3>Downtown</h3>
+                        <h4>384 West 4th St</h4>
+                        <h4>Suite 108</h4>
+                        <h4>Portland, Maine</h4>
+                    </div>
+                    <!-- Locations Panels-->
+                    <div class="locationPanelSmall" id="eastBayside">
+                        <h3>East Bayside</h3>
+                        <h4>3433 Phisherman's Avenue</h4>
+                        <h4>(Northwest Corner)</h4>
+                        <h4>Portland, Maine</h4>
+                    </div>
+                    <!-- Locations Panels-->
+                    <div class="locationPanelSmall" id="oakdale">
+                        <h3>Oakdale</h3>
+                        <h4>515 Crescent Avenue</h4>
+                        <h4>Second Floor</h4>
+                        <h4>Portland, Maine</h4>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contactContainer">
+                <h2>The Tea Cozy</h2>
+                <h5>contact@theteacozy.com</h5>
+                <h5>917-555-8904</h5>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="copyrightContainer">
+                <h5>copyright The Tea Cozy 2017</h5>
+            </div>
+
+
+
+        </main>
+
+    </body>
+</html>

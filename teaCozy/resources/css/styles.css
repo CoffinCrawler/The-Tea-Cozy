@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: seashell;
+    font-family: Helvetica, Arial, sans-serif;
+    list-style-type: none;
+}
+
+/* HEADER STYLING */
+
+/* Adjusting Logo Size*/
+.logo {
+    margin-left: 10px;
+    height: 50px;
+}
+
+header {
+    opacity: 0.6;
+    min-height: 69px;
+    width: 100vw ;
+  /*position:fixed; */
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Nav Styling*/
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: aqua;
+}
+
+nav a:active {
+    color: blue;
+}
+
+nav .icon {
+    display: none;
+}
+
+
+/* Responsive menu. Sets the width before adjusting to mobile view */
+@media screen and (max-width: 600px) {
+    nav a {display: none;}
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav.responsive {position: relative;}
+    nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Mission Section Styling */
+
+.missionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 700px;
+    width: 100 vw;
+    background-image: url(/resources/imgs/img-mission-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0px;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.mission h2 {
+    margin: 10px;
+}
+
+.mission h4 {
+    margin: 10px;
+}
+
+/* Monthly Section Styling */
+
+.monthlyTeaContainer {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.monthlyTeaContainer h2{
+    margin-bottom: 15px;
+}
+
+.monthlyTeaContainer h4{
+    margin-bottom: 20px;
+}
+
+.monthlyTea {
+    display: flex;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 15px;
+}
+
+.monthlyPanel {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.monthlyPanel h4 {
+    width: fit-content;
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+.monthlyPanel img {
+    width: 300px;
+    margin-bottom: 0px;
+}
+
+/* Locations Section Styling */
+
+.locationsContainer {
+    height: 550px;  /* Spec calls for 500pxht but cannot for the life of me fit the img in 500px + still match spec */
+    width: 100vw;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/resources/imgs/img-locations-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: 50% -15px;
+    background-size: 1200px;
+    margin-bottom: 0px;
+}
+
+.locationsContainer h2 {
+    margin-bottom: 15px;
+    background: none;
+}
+
+.locationsPanelContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: none;
+}
+
+.locationPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 270px;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 2 1 150px;
+}
+
+/* Styling for reactive/mobile panel layer */
+
+.locationsPanelContainerSmall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: none;
+    row-gap: 15px;
+}
+
+.locationPanelSmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .locationsPanelContainer {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .locationsPanelContainerSmall {
+        display: none;
+    }
+}
+
+/* Contact Section Styling */
+
+.contactContainer {
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Copyright Section Styling */
+
+.copyrightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 50px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
